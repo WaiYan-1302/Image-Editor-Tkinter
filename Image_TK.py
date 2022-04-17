@@ -1,11 +1,12 @@
 import cv2
 from tkinter import *
 import PIL.Image , PIL.ImageTk
+import cv2
 
 root = Tk()
 root.title("CV and Tkinter")
 root.geometry('900x700')
-cv_img = cv2.cvtColor(cv2.imread("Moom2.jpeg") , cv2.COLOR_BGR2RGB)
+cv_img = cv2.cvtColor(cv2.imread("Venice.jpg") , cv2.COLOR_BGR2RGB)
 
 blur = cv2.bilateralFilter(cv_img,8,75,75)
 
